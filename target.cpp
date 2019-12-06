@@ -2,6 +2,7 @@
 #include <iostream>
 #include "target.hpp"
 #include "space.hpp"
+#include "asciiArt.hpp"
 
 using std::cout;
 using std::endl;
@@ -18,5 +19,7 @@ Target::Target() : Space(1)
 
 void Target::printMessage()
 {
-    cout << TARGET_MESSAGE << endl;
+    printTarget();
+    cout << endl
+         << TARGET_MESSAGE << endl;
 }

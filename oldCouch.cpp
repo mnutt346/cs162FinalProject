@@ -2,6 +2,7 @@
 #include <iostream>
 #include "oldCouch.hpp"
 #include "space.hpp"
+#include "asciiArt.hpp"
 
 using std::cout;
 using std::endl;
@@ -18,5 +19,7 @@ OldCouch::OldCouch() : Space(3)
 
 void OldCouch::printMessage()
 {
-    cout << COUCH_MSG << endl;
+    printCouch();
+    cout << endl
+         << COUCH_MSG << endl;
 }

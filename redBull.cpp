@@ -2,6 +2,7 @@
 #include <iostream>
 #include "redBull.hpp"
 #include "space.hpp"
+#include "asciiArt.hpp"
 
 using std::cout;
 using std::endl;
@@ -17,5 +18,7 @@ RedBull::RedBull() : Space(10)
 
 void RedBull::printMessage()
 {
-    cout << REDBULL_MESSAGE << endl;
+    printRedbull();
+    cout << endl
+         << REDBULL_MESSAGE << endl;
 }

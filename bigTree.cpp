@@ -2,6 +2,7 @@
 #include <iostream>
 #include "bigTree.hpp"
 #include "space.hpp"
+#include "asciiArt.hpp"
 
 using std::cout;
 using std::endl;
@@ -17,5 +18,7 @@ BigTree::BigTree() : Space(2)
 
 void BigTree::printMessage()
 {
-    cout << BIG_TREE_MSG << endl;
+    printTree();
+    cout << endl
+         << BIG_TREE_MSG << endl;
 }
